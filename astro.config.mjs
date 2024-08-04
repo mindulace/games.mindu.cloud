@@ -7,6 +7,8 @@ export default defineConfig({
     // Enable React to support React JSX components.
     integrations: [
         react(),
-        tailwind(),
+        tailwind({
+            applyBaseStyles: false,
+        }),
     ],
 });
